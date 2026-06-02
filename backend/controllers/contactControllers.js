@@ -1,4 +1,4 @@
-import Contact from "../models/term.js";
+import Contact from "../models/Contact.js";
 import resend from "../config/resend.js";
 
 export const sendContact = async (req, res) => {
