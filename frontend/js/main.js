@@ -70,6 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = {
             name: form.name.value,
             email: form.email.value,
+            phone: form.phone.value,
+            design: form.design.value,
             size: form.size.value,
             message: form.message.value,
         };

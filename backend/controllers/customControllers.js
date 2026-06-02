@@ -3,6 +3,7 @@ import resend from "../config/resend.js";
 
 export const sendCustomRequest = async (req, res) => {
     try {
+        console.log("REQ BODY KEYS:", Object.keys(req.body));
         console.log("CUSTOM REQUEST RECEIVED:", req.body);
         const data = req.body;
 
@@ -22,7 +23,7 @@ export const sendCustomRequest = async (req, res) => {
             from: "Noori Carpets <onboarding@resend.dev>",
 
             // ⚠️ CHANGE THIS to your real email
-            to: "your-email@example.com",
+            to: process.env.OWNER_EMAIL,
 
             subject: "🧵 New Custom Carpet Request",
 
