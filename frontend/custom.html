@@ -9,73 +9,79 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/responsive.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">NOORI</div>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="custom.html">Custom Carpet</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <a href="cart.html">Cart 🛒</a>
-                <a href="wishlist.html">Wishlist ❤️</a>
-            </ul>
+<header>
+    <nav class="navbar">
+        <div class="logo">NOORI</div>
 
-            <div class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="custom.html">Custom Carpet</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart 🛒</a></li>
+            <li><a href="wishlist.html">Wishlist ❤️</a></li>
+        </ul>
 
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
 
-        </nav>
-    </header>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
 
-    <section class="custom-carpet">
+<!-- CUSTOM CARPET -->
+<section class="custom-carpet">
 
-        <h1>Design Your Carpet</h1>
+    <h1 data-aos="fade-up">Design Your Carpet</h1>
 
-        <form id="customForm">
+    <form id="customForm">
 
-            <input type="text" placeholder="Your Name">
+        <input type="text" name="name" placeholder="Your Name" required>
 
-            <input type="email" placeholder="Email">
+        <input type="email" name="email" placeholder="Email" required>
 
-            <select>
+        <select name="size" required>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
 
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
+        <textarea name="message" placeholder="Describe your carpet" required></textarea>
 
-            </select>
+        <button class="btn" type="submit">Request Quote</button>
 
-            <textarea placeholder="Describe your carpet"></textarea>
+    </form>
 
-            <button class="btn" type="submit">
-                Request Quote
-            </button>
+</section>
 
-        </form>
+<!-- WhatsApp -->
+<a href="https://wa.me/937XXXXXXXXX" class="whatsapp-btn" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
-    </section>
-    <footer>
-        <p>© 2026 Noori Carpets</p>
-    </footer>
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="js/theme.js"></script>
-    <script src="js/main.js"></script>
-    <a href="https://wa.me/937XXXXXXXXX" class="whatsapp-btn" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+<script>
+    AOS.init();
+</script>
+
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
 
 </body>
-
 </html>
