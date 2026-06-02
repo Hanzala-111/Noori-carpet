@@ -37,6 +37,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 
     transition: 0.3s;
+    flex-wrap: wrap;
 }
 
 #cartContainer > div:hover,
