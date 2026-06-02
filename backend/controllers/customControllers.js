@@ -3,6 +3,7 @@ import resend from "../config/resend.js";
 
 export const sendCustomRequest = async (req, res) => {
     try {
+        console.log("CUSTOM REQUEST RECEIVED:", req.body);
         const data = req.body;
 
         // ✅ better validation (not just empty check)
