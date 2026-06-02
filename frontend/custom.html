@@ -18,70 +18,77 @@
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">NOORI</div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">NOORI</div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="custom.html">Custom Carpet</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html">Cart 🛒</a></li>
-            <li><a href="wishlist.html">Wishlist ❤️</a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="custom.html">Custom Carpet</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart 🛒</a></li>
+                <li><a href="wishlist.html">Wishlist ❤️</a></li>
+            </ul>
 
-        <div class="theme-toggle">
-            <i class="fas fa-moon"></i>
-        </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
 
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-</header>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-<!-- CUSTOM CARPET -->
-<section class="custom-carpet">
+    <!-- CUSTOM CARPET -->
+    <section class="custom-carpet">
 
-    <h1 data-aos="fade-up">Design Your Carpet</h1>
+        <h1 data-aos="fade-up">Design Your Carpet</h1>
 
-    <form id="customForm">
+        <form id="customForm">
 
-        <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="name" placeholder="Your Name" required>
 
-        <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email" required>
 
-        <select name="size" required>
-            <option value="Small">Small</option>
-            <option value="Medium">Medium</option>
-            <option value="Large">Large</option>
-        </select>
+            <!-- REQUIRED by your backend -->
+            <input type="text" name="phone" placeholder="Phone Number" required>
 
-        <textarea name="message" placeholder="Describe your carpet" required></textarea>
+            <!-- REQUIRED by your backend -->
+            <input type="text" name="design" placeholder="Design Type (e.g. Modern, Classic)" required>
 
-        <button class="btn" type="submit">Request Quote</button>
+            <select name="size" required>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
 
-    </form>
+            <textarea name="message" placeholder="Describe your carpet" required></textarea>
 
-</section>
+            <button class="btn" type="submit">Request Quote</button>
 
-<!-- WhatsApp -->
-<a href="https://wa.me/937XXXXXXXXX" class="whatsapp-btn" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
+        </form>
 
-<!-- SCRIPTS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </section>
 
-<script>
-    AOS.init();
-</script>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/937XXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-<script src="js/theme.js"></script>
-<script src="js/main.js"></script>
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>

@@ -45,11 +45,12 @@ export const sendCustomRequest = async (req, res) => {
         });
 
     } catch (error) {
-        console.error("Custom Request Error:", error);
+    console.error("❌ FULL ERROR:", error);
 
-        return res.status(500).json({
-            success: false,
-            message: "Server error while sending custom request"
-        });
-    }
-};
+    res.status(500).json({
+        success: false,
+        message: "Server error while sending custom request",
+        error: error.message
+    });
+}
+}
