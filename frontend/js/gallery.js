@@ -1,22 +1,17 @@
-const galleryImages =
-    document.querySelectorAll(".gallery-grid img");
+const galleryImages = document.querySelectorAll(".gallery-grid img");
 
-const lightbox =
-    document.getElementById("lightbox");
-
-const lightboxImage =
-    document.getElementById("lightboxImage");
-
-const closeLightbox =
-    document.getElementById("closeLightbox");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const closeLightbox = document.getElementById("closeLightbox");
 
 galleryImages.forEach(image => {
 
     image.addEventListener("click", () => {
 
-        lightbox.style.display = "flex";
-
+        lightbox.classList.add("active");
         lightboxImage.src = image.src;
+
+        document.body.style.overflow = "hidden";
 
     });
 
@@ -24,7 +19,8 @@ galleryImages.forEach(image => {
 
 closeLightbox.addEventListener("click", () => {
 
-    lightbox.style.display = "none";
+    lightbox.classList.remove("active");
+    document.body.style.overflow = "auto";
 
 });
 
@@ -32,7 +28,8 @@ lightbox.addEventListener("click", (e) => {
 
     if (e.target === lightbox) {
 
-        lightbox.style.display = "none";
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "auto";
 
     }
 
