@@ -203,7 +203,7 @@ section h2 {
 .product-gallery img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
 }
 
 .product-info h1 {
@@ -298,43 +298,44 @@ section h2 {
 /* ===== CATEGORIES ===== */
 
 .categories {
-  padding: 80px 20px;
-  text-align: center;
-  background: #f8f8f8;
-  color: #111;
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8f8f8;
+    color: #111;
 }
 
 .categories h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  color: #111;
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    color: #111;
 }
 
 .category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .category-card {
-  background: white;
-  border: 2px solid #d4af37; /* gold */
-  padding: 40px 20px;
-  font-size: 18px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    background: white;
+    border: 2px solid #d4af37;
+    /* gold */
+    padding: 40px 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .category-card:hover {
-  transform: translateY(-10px);
-  background: #d4af37;
-  color: white;
-  font-weight: bold;
+    transform: translateY(-10px);
+    background: #d4af37;
+    color: white;
+    font-weight: bold;
 }
 
 /* ===== WHY US ===== */
@@ -363,7 +364,7 @@ section h2 {
     background: #fff;
     padding: 35px 25px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
 }
 
@@ -410,7 +411,7 @@ section h2 {
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
 }
 
 .stars {
@@ -489,7 +490,7 @@ footer {
 
 /* ===== FORMS ===== */
 
-.about{
+.about {
     text-align: center;
     height: 100vh;
     color: white;
@@ -530,6 +531,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 70px 10px;
 }
 
 .titleG {
@@ -538,7 +540,7 @@ footer {
     font-size: 3rem;
 }
 
-#closeLightbox{
+#closeLightbox {
     cursor: pointer;
 }
 
@@ -583,11 +585,12 @@ button {
 
 }
 
-.custom-carpet h1, .contact h1{
+.custom-carpet h1,
+.contact h1 {
     margin: 20px;
 }
 
-.lightbox img{
+.lightbox img {
     margin: 15px;
 }
 
@@ -655,6 +658,7 @@ body.dark .why-us {
 body.dark .testimonials {
     background: #111;
 }
+
 body.dark .feature-card,
 body.dark .testimonial-card {
     background: #222;
@@ -700,8 +704,8 @@ body.dark {
     color: white;
 }
 
-body.dark #cartContainer > div,
-body.dark #wishlistContainer > div {
+body.dark #cartContainer>div,
+body.dark #wishlistContainer>div {
     background: #1e1e1e;
     color: white;
 }
@@ -741,7 +745,7 @@ body.dark #totalPrice {
 
     border-radius: 50%;
 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 
     transition: 0.3s;
 }
@@ -778,7 +782,7 @@ body.dark #totalPrice {
 
     text-decoration: none;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 
     z-index: 9999;
 
@@ -818,7 +822,7 @@ body.dark #totalPrice {
     color: white;
 }
 
-.margin{
+.margin {
     margin-top: 90px;
 }
 
