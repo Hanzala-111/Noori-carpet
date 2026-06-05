@@ -1,3 +1,4 @@
+
 function getCart() {
     return JSON.parse(localStorage.getItem("cart")) || [];
 }
@@ -38,9 +39,9 @@ if (whatsappBtn) {
         let message =
             `Hello Noori Carpet,
 
-I would like to order:
+            I would like to order:
 
-`;
+            `;
 
         cart.forEach(item => {
 
@@ -53,7 +54,7 @@ I would like to order:
 
             message +=
                 `- ${item.name} x${quantity} - $${itemTotal}
-`;
+                `;
         });
 
         message += `
@@ -66,7 +67,7 @@ My phone:
 `;
 
         const phone =
-            "93744364948";
+            "93786815572";
 
         const whatsappURL =
             `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
