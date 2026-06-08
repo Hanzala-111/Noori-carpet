@@ -547,20 +547,6 @@ footer {
     text-align: center;
 }
 
-.contact {
-    height: 100vh;
-    color: white;
-    background:
-        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-        url('../assets/images/contact.jpg');
-
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .custom-carpet {
     height: 100vh;
     color: white;
@@ -680,6 +666,11 @@ body.dark .product-card {
     color: white;
 }
 
+body.dark .shop-card {
+    background: #222;
+    color: white;
+}
+
 body.dark .product-details {
     background: #111;
 }
@@ -756,6 +747,10 @@ body.dark p {
     color: #ccc;
 }
 
+body.dark h1 {
+    color: white;
+}
+
 body.dark #totalPrice {
     color: white;
 }
@@ -777,9 +772,9 @@ body.dark #totalPrice {
 
     z-index: 999;
 
-    background: white;
+    /* background: white;
     width: 35px;
-    height: 35px;
+    height: 35px; */
 
     display: flex;
     align-items: center;
@@ -862,10 +857,6 @@ body.dark #totalPrice {
 #wishlistBtn.active {
     background: #e63946;
     color: white;
-}
-
-.margin {
-    margin-top: 90px;
 }
 
 .cart-status {

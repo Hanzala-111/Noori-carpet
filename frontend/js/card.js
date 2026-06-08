@@ -14,7 +14,7 @@ function addToCart(product) {
     cart.push(product);
 
     saveCart(cart);
-
+4
     alert("Added to cart!");
 }
 
@@ -58,13 +58,11 @@ if (whatsappBtn) {
         });
 
         message += `
-
-Total: $${total}
-
-My name:
-My address:
-My phone:
-`;
+        Total: $${total}
+        My name:
+        My address:
+        My phone:
+        `;
 
         const phone =
             "93786815572";
