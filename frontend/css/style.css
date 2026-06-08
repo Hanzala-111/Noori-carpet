@@ -532,21 +532,6 @@ footer {
 
 /* ===== FORMS ===== */
 
-.about {
-    text-align: center;
-    height: 100vh;
-    color: white;
-    background:
-        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-        url('../assets/images/0.jpg');
-
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .custom-carpet {
     height: 100vh;
     color: white;
